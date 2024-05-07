@@ -1,4 +1,5 @@
 import Card from './components/Card';
+import Count from './components/Count';
 
 const users = [
   {
@@ -70,13 +71,15 @@ const users = [
 ];
 
 function App() {
+
   return (
     <>
-      {
+      <Count />
+      {/* {
         users.map((user) => {
-          return <Card user={user} hidden={user.active === true} key={user.id}  />;
+          return <Card user={user} hidden={user.active === true} key={user.id} />;
         })
-      }
+      } */}
     </>
   )
 }
